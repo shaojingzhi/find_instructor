@@ -43,7 +43,7 @@ public class SettingFragment extends BaseFragment {
     @Override
     protected int getLayoutId() {
         //return R.layout.fragment_setting;
-        return R.layout.fragment_main_page_list;
-        //return R.layout.list_item;
+        //return R.layout.fragment_main_page_list;
+        return R.layout.list_item;
     }
 }
