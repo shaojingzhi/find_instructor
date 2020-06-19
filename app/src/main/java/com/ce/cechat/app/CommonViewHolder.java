@@ -11,10 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/**
- * @author CE Chen
- *
- */
+
 public class CommonViewHolder extends RecyclerView.ViewHolder {
 
     private SparseArray<View> mViews = new SparseArray<>();

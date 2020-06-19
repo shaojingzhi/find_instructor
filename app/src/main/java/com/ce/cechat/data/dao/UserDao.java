@@ -109,6 +109,9 @@ public class UserDao extends AbstractDao{
         user.setName(pCursor.getString(pCursor.getColumnIndex(UserTable.NAME)));
         user.setNickname(pCursor.getString(pCursor.getColumnIndex(UserTable.NICKNAME)));
         user.setHead(pCursor.getString(pCursor.getColumnIndex(UserTable.HEAD)));
+        user.setShenfen(pCursor.getString(pCursor.getColumnIndex(UserTable.SHENFEN)));
+        user.setDepartment(pCursor.getString(pCursor.getColumnIndex(UserTable.DEPARTMENT)));
+        user.setIntroduction(pCursor.getString(pCursor.getColumnIndex(UserTable.INTRODUCTION)));
         return user;
     }
 
@@ -123,6 +126,9 @@ public class UserDao extends AbstractDao{
         contentValues.put(UserTable.NAME, pUser.getName());
         contentValues.put(UserTable.NICKNAME, pUser.getNickname());
         contentValues.put(UserTable.HEAD, pUser.getHead());
+        contentValues.put(UserTable.SHENFEN, pUser.getShenfen());
+        contentValues.put(UserTable.DEPARTMENT, pUser.getDepartment());
+        contentValues.put(UserTable.INTRODUCTION, pUser.getIntroduction());
         return contentValues;
     }
 

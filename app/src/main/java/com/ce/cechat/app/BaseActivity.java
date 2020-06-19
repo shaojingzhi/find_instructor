@@ -7,11 +7,7 @@ import javax.inject.Inject;
 
 import dagger.android.support.DaggerAppCompatActivity;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
+
 public class BaseActivity<T extends IBaseContact.IBasePresenter> extends DaggerAppCompatActivity implements IBaseContact.IBaseView {
 
     @NonNull

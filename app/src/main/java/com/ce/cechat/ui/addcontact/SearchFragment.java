@@ -1,6 +1,7 @@
 package com.ce.cechat.ui.addcontact;
 
 import android.content.DialogInterface;
+import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
@@ -44,6 +45,15 @@ public class SearchFragment extends InjectFragment<SearchPresenter> implements I
     AppCompatImageView ivHead;
     @BindView(R.id.tv_nickname)
     AppCompatTextView tvNickname;
+    @Nullable
+    @BindView(R.id.tv_shenfen)
+    AppCompatTextView tvShenfen;
+    @Nullable
+    @BindView(R.id.tv_department)
+    AppCompatTextView tvDepartment;
+    @Nullable
+    @BindView(R.id.tv_introduction)
+    AppCompatTextView tvIntroduction;
     @BindView(R.id.tv_add)
     AppCompatTextView tvAdd;
 
@@ -139,12 +149,18 @@ public class SearchFragment extends InjectFragment<SearchPresenter> implements I
     private void hideUser() {
         ivHead.setVisibility(View.GONE);
         tvNickname.setVisibility(View.GONE);
+        tvShenfen.setVisibility(View.GONE);
+        tvIntroduction.setVisibility(View.GONE);
+        tvDepartment.setVisibility(View.GONE);
         tvAdd.setVisibility(View.GONE);
     }
 
     private void showUser() {
         ivHead.setVisibility(View.VISIBLE);
         tvNickname.setVisibility(View.VISIBLE);
+        tvShenfen.setVisibility(View.VISIBLE);
+        tvIntroduction.setVisibility(View.VISIBLE);
+        tvDepartment.setVisibility(View.VISIBLE);
         tvAdd.setVisibility(View.VISIBLE);
     }
 
@@ -162,6 +178,7 @@ public class SearchFragment extends InjectFragment<SearchPresenter> implements I
     public void searchSuccess(User pUser) {
         tvNickname.setText(pUser.getName());
         showUser();
+
     }
 
     @Override

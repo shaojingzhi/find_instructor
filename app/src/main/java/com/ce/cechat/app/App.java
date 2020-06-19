@@ -14,9 +14,6 @@ import cn.jpush.android.api.JPushInterface;
 import dagger.android.AndroidInjector;
 import dagger.android.support.DaggerApplication;
 
-/**
- * @author CE Chen
- */
 public class App extends DaggerApplication {
 
     private static App sApp;

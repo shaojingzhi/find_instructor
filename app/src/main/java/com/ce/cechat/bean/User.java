@@ -20,6 +20,12 @@ public class User implements Parcelable, Serializable {
 
     protected String head;
 
+    protected String department = "划水系";
+
+    protected String introduction = "摸鱼鱼";
+
+    protected String shenfen = "学生";
+
     public User() {
     }
 
@@ -28,17 +34,32 @@ public class User implements Parcelable, Serializable {
         this.name = name;
         this.nickname = name;
     }
-
+/*
     public User(String hyphenateId, String name, String nickname, String head) {
         this.hyphenateId = hyphenateId;
         this.name = name;
         this.nickname = nickname;
         this.head = head;
     }
+*/
+    public User(String hyphenateId, String name, String nickname, String head,String shenfen,String department,String introduction) {
+        this.hyphenateId = hyphenateId;
+        this.name = name;
+        this.nickname = nickname;
+        this.head = head;
+
+        this.department = department;
+        this.introduction = introduction;
+        this.shenfen = shenfen;
+
+    }
 
     protected User(Parcel in) {
         hyphenateId = in.readString();
         name = in.readString();
+        shenfen = in.readString();
+        department = in.readString();
+        introduction = in.readString();
         nickname = in.readString();
         head = in.readString();
     }
@@ -71,6 +92,30 @@ public class User implements Parcelable, Serializable {
         this.name = name;
     }
 
+    public String getShenfen() {
+        return shenfen;
+    }
+
+    public void setShenfen(String shenfen) {
+        this.shenfen = shenfen;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public void setIntroduction (String introduction)  {
+        this.introduction = introduction;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
     public String getNickname() {
         return nickname;
     }
@@ -93,6 +138,9 @@ public class User implements Parcelable, Serializable {
                 ", name='" + name + '\'' +
                 ", nickname='" + nickname + '\'' +
                 ", head='" + head + '\'' +
+                ", shenfen='" + shenfen + '\'' +
+                ", department='" + department + '\'' +
+                ", introduction='" + introduction + '\'' +
                 '}';
     }
 
@@ -105,6 +153,9 @@ public class User implements Parcelable, Serializable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(hyphenateId);
         dest.writeString(name);
+        dest.writeString(shenfen);
+        dest.writeString(department);
+        dest.writeString(introduction);
         dest.writeString(nickname);
         dest.writeString(head);
     }

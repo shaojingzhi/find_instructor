@@ -152,9 +152,12 @@ public class ContactDao extends AbstractDao{
     protected User getBean(Cursor pCursor) {
         String hyphenateId = pCursor.getString(pCursor.getColumnIndex(ContactTable.HYPHENATE_ID));
         String name = pCursor.getString(pCursor.getColumnIndex(ContactTable.NAME));
+        String shenfen = pCursor.getString(pCursor.getColumnIndex(ContactTable.SHENFEN));
+        String department = pCursor.getString(pCursor.getColumnIndex(ContactTable.DEPARTMENT));
+        String introduction = pCursor.getString(pCursor.getColumnIndex(ContactTable.INTRODUCTION));
         String nickname = pCursor.getString(pCursor.getColumnIndex(ContactTable.NICKNAME));
         String head = pCursor.getString(pCursor.getColumnIndex(ContactTable.HEAD));
-        return new User(hyphenateId, name, nickname, head);
+        return new User(hyphenateId, name, nickname, head, shenfen, department, introduction);
     }
 
 
@@ -169,6 +172,9 @@ public class ContactDao extends AbstractDao{
         contentValues.put(ContactTable.NAME, pUser.getName());
         contentValues.put(ContactTable.NICKNAME, pUser.getNickname());
         contentValues.put(ContactTable.HEAD, pUser.getHead());
+        contentValues.put(ContactTable.SHENFEN, pUser.getShenfen());
+        contentValues.put(ContactTable.DEPARTMENT, pUser.getDepartment());
+        contentValues.put(ContactTable.INTRODUCTION, pUser.getIntroduction());
         return contentValues;
     }
 

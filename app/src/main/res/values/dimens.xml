@@ -5,7 +5,7 @@
     <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
          https://developer.android.com/design/patterns/navigation-drawer.html -->
     <dimen name="navigation_drawer_width">240dp</dimen>
-    <dimen name="nav_header_height">206dp</dimen>
+    <dimen name="nav_header_height">300dp</dimen>
 
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="add_new_friend">16sp</dimen>

@@ -13,11 +13,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import dagger.android.support.DaggerFragment;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
+
 public abstract class BaseFragment extends DaggerFragment {
 
     protected OnFragmentInteractionListener mListener;

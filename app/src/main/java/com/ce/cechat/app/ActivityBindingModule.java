@@ -10,11 +10,7 @@ import com.ce.cechat.ui.splash.SplashModule;
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
+
 @Module(subcomponents = {BaseActivityComponent.class})
 public abstract class ActivityBindingModule {
 

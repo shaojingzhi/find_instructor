@@ -4,12 +4,12 @@ apply plugin: 'androidx.navigation.safeargs'
 apply plugin: 'com.mob.sdk'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 27
     defaultConfig {
         multiDexEnabled true
         applicationId "com.ce.cechat"
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

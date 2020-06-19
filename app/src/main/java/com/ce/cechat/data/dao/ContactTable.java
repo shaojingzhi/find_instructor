@@ -15,6 +15,12 @@ public class ContactTable {
 
     public static final String NAME = "name";
 
+    public static final String SHENFEN = "shenfen";
+
+    public static final String DEPARTMENT = "department";
+
+    public static final String INTRODUCTION = "introduction";
+
     public static final String NICKNAME = "nickname";
 
     public static final String HEAD = "head";
@@ -29,6 +35,9 @@ public class ContactTable {
             + NAME + " TEXT, "
             + NICKNAME + " TEXT, "
             + HEAD + " TEXT, "
+            + SHENFEN + " TEXT, "
+            + DEPARTMENT + " TEXT, "
+            + INTRODUCTION + " TEXT, "
             + IS_CONTACT + " INTEGER DEFAULT (1));";
 
 }
