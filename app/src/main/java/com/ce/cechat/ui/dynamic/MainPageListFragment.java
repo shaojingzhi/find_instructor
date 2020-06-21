@@ -116,7 +116,7 @@ public class MainPageListFragment extends Fragment {
                         LinearLayoutManager.VERTICAL,false));
 
 
-        infoList.addAll(infoItemList.getMoreItems());
+        //infoList.addAll(infoItemList.getMoreItems());
 
         // 下拉刷新
         this.mainPageListSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -124,7 +124,7 @@ public class MainPageListFragment extends Fragment {
             public void onRefresh() {
                 // 此处考虑多线程？
                 infoList.clear();
-                infoList.addAll(infoItemList.refreshItemList());
+                //infoList.addAll(infoItemList.refreshItemList());
                 mainPageListSwipeRefreshLayout.setRefreshing(false);
                 mainPageListAdapter.notifyDataSetChanged();
             }
@@ -141,7 +141,7 @@ public class MainPageListFragment extends Fragment {
                 {
                     if(lastVisiblePosition == mainPageListAdapter.getItemCount()-1)
                     {
-                        infoList.addAll(infoItemList.getMoreItems());
+                        //infoList.addAll(infoItemList.getMoreItems());
                         mainPageListAdapter.notifyDataSetChanged();
                     }
 
