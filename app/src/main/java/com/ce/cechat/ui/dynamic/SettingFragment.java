@@ -89,6 +89,9 @@ public class SettingFragment extends BaseFragment {
     @Override
     protected void initView(View view) {
         this.view=view;
+        String s = Values.use_id;
+        Values.use_id = "ss";
+        s=Values.use_id;
         initRecyclerView();
     }
 
