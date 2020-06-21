@@ -37,7 +37,7 @@ public class InfoItemList {
         try {
             OkHttpClient client = new OkHttpClient();
             RequestBody requestBody = new FormBody.Builder()
-                    .add("user_id", "newuser")
+                    .add("user_id", Values.use_id)
                     .add("search",oldSearchStr)
                     .add("page",String.valueOf(page))
                     .build();
@@ -75,7 +75,7 @@ public class InfoItemList {
 
 
                         // 获取图片
-                        URL url=new URL(Values.rootIP + j.getString("photo_path").substring(1)+"/1.jpg");
+                        URL url=new URL(Values.rootIP + j.getString("photo_path"));
                         HttpURLConnection conn;
                         conn = (HttpURLConnection) url.openConnection();  //创建链接
                         conn.setConnectTimeout(6000);   //超时设定
