@@ -69,15 +69,18 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_go_top"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_gravity="center|end"
-        android:layout_margin="40dp"
+        android:layout_margin="30dp"
         android:layout_marginTop="675dp"
         android:layout_marginBottom="691dp"
         android:backgroundTint="@color/color_white"
+        android:cropToPadding="false"
+        android:scaleType="center"
         app:borderWidth="0dp"
         app:elevation="0dp"
+
         app:fabSize="mini"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
