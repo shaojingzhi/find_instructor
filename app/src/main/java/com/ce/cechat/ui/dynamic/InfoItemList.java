@@ -1,6 +1,9 @@
 package com.ce.cechat.ui.dynamic;
 
 import android.graphics.BitmapFactory;
+
+import com.ce.cechat.ui.Values;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 

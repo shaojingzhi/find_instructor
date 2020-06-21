@@ -53,7 +53,7 @@ public class MainPageListAdapter
             holder.attention.setBackgroundResource(R.drawable.ic_guanzhu);
 
         holder.announcement_content.setText(itemData.announcement_content);
-        //holder.announcement_title.setText(itemData.announcement_title);
+        holder.announcement_title.setText(itemData.announcement_title);
 
         holder.attention.setTag(position);  // 标记按钮处于哪
         holder.head_image.setTag(position);
@@ -76,7 +76,7 @@ public class MainPageListAdapter
         private TextView publish_time;
         private ImageButton attention;
         private TextView announcement_content;
-        //private TextView announcement_title;
+        private TextView announcement_title;
 
         public ListItemViewHolder(View itemView)
         {
@@ -88,7 +88,7 @@ public class MainPageListAdapter
             publish_time=(TextView)itemView.findViewById(R.id.publish_time);
             attention=(ImageButton)itemView.findViewById(R.id.attention);
             announcement_content = (TextView)itemView.findViewById(R.id.announcement_content);
-            //announcement_title=(TextView)itemView.findViewById(R.id.announcement_title);
+            announcement_title=(TextView)itemView.findViewById(R.id.announcement_title);
 
             //添加点击事件
             attention.setOnClickListener(MainPageListAdapter.this);

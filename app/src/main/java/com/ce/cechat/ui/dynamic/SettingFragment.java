@@ -1,5 +1,6 @@
 package com.ce.cechat.ui.dynamic;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -22,8 +23,17 @@ import android.widget.ImageButton;
 
 import com.ce.cechat.R;
 import com.ce.cechat.app.BaseFragment;
+import com.ce.cechat.ui.Values;
 
 import java.util.LinkedList;
+
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
+import static android.app.Activity.RESULT_OK;
 
 /**
  * @author CE Chen
@@ -36,12 +46,15 @@ import java.util.LinkedList;
 public class SettingFragment extends BaseFragment {
 
 
+    private boolean flagForThread=true;
+
     private View view;
     private LinkedList<InfoItem> infoList = new LinkedList<>();  // 列表信息
     private LinkedList<InfoItem> newInfos;                      // 获取的新的部分信息
     private final InfoItemList infoItemList = new InfoItemList(); // 从服务器获取列表的类的实例
 
     private FloatingActionButton goTop;                     // 返回顶部按钮
+    private FloatingActionButton writeAnnouncement;         // 新动态
 
     private RecyclerView mainPageListRV;                // RecyclerView部件
     private MainPageListAdapter mainPageListAdapter;                // adapter
@@ -96,11 +109,12 @@ public class SettingFragment extends BaseFragment {
         public void handleMessage(@NonNull Message msg) {
             if(msg.what==100)
             {
-                if(newInfos != null || newInfos.size()!=0) {
+                if(newInfos != null) {
                     infoList.addAll(newInfos);
+                    newInfos=null;
                     mainPageListAdapter.notifyDataSetChanged();
                 }
-
+                flagForThread=false;
             }
         }
     };
@@ -109,6 +123,8 @@ public class SettingFragment extends BaseFragment {
 
         goTop = view.findViewById(R.id.fab_go_top);
         goTop.setVisibility(View.GONE);  //隐藏
+
+        writeAnnouncement = view.findViewById(R.id.write);
 
         mainPageListSwipeRefreshLayout = view.findViewById(R.id.main_page_list_swipeRefreshLayout);
         mainPageListRV = view.findViewById(R.id.main_page_list_rv);
@@ -126,7 +142,8 @@ public class SettingFragment extends BaseFragment {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                newInfos = infoItemList.getMoreItems(searchStr,false);
+                flagForThread = true;
+                newInfos = infoItemList.getMoreItems(searchStr,true);
                 Message msg = new Message();
                 msg.what = 100;
                 handler.sendMessage(msg);
@@ -136,13 +153,19 @@ public class SettingFragment extends BaseFragment {
     }
     private void setEvent()
     {
-
-
         goTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mainPageListRV.smoothScrollToPosition(0);
                 goTop.setVisibility(View.GONE);
+            }
+        });
+
+        writeAnnouncement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SettingFragment.this.getActivity(), newAnnouncement.class);
+                startActivityForResult(intent,101);
             }
         });
 
@@ -176,15 +199,18 @@ public class SettingFragment extends BaseFragment {
                 searchStr = search.getText().toString();
                 //TODO
                 infoList.clear();
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        newInfos = infoItemList.getMoreItems(searchStr,true);
-                        Message msg = new Message();
-                        msg.what=100;
-                        handler.sendMessage(msg);
-                    }
-                }).start();
+                if(!flagForThread) {
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            flagForThread = true;
+                            newInfos = infoItemList.getMoreItems(searchStr, true);
+                            Message msg = new Message();
+                            msg.what = 100;
+                            handler.sendMessage(msg);
+                        }
+                    }).start();
+                }
             }
         });
 
@@ -194,15 +220,19 @@ public class SettingFragment extends BaseFragment {
             public void onRefresh() {
                 // 此处考虑多线程？
                 infoList.clear();
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        newInfos = infoItemList.getMoreItems(searchStr,true);
-                        Message msg = new Message();
-                        msg.what=100;
-                        handler.sendMessage(msg);
-                    }
-                }).start();
+                if(!flagForThread)
+                {
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            flagForThread=true;
+                            newInfos = infoItemList.getMoreItems(searchStr,true);
+                            Message msg = new Message();
+                            msg.what=100;
+                            handler.sendMessage(msg);
+                        }
+                    }).start();
+                }
                 mainPageListSwipeRefreshLayout.setRefreshing(false);
 
             }
@@ -219,15 +249,19 @@ public class SettingFragment extends BaseFragment {
                 {
                     if(!mainPageListRV.canScrollVertically(1))
                     {
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                newInfos = infoItemList.getMoreItems(searchStr,false);
-                                Message msg = new Message();
-                                msg.what=100;
-                                handler.sendMessage(msg);
-                            }
-                        }).start();
+                        if(!flagForThread)
+                        {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    flagForThread=true;
+                                    newInfos = infoItemList.getMoreItems(searchStr,false);
+                                    Message msg = new Message();
+                                    msg.what=100;
+                                    handler.sendMessage(msg);
+                                }
+                            }).start();
+                        }
                     }
 
                     // 返回顶部按键在一定条件下显示
@@ -294,6 +328,38 @@ public class SettingFragment extends BaseFragment {
         {
             infoList.get(position).attention=false;
             imageButton.setBackgroundResource(R.drawable.ic_guanzhu);
+        }
+    }
+
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 101 && resultCode == RESULT_OK) {
+
+            final String new_title = data.getStringExtra("title");
+            final String new_content = data.getStringExtra("content");
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        OkHttpClient client = new OkHttpClient();
+                        RequestBody requestBody = new FormBody.Builder()
+                                .add("user_id", "newuser")
+                                .add("announcement_title",new_title)
+                                .add("announcement_content",new_content)
+                                .build();
+
+                        Request request = new Request.Builder().url(Values.rootIP+"/user/postAnnouncement").post(requestBody).build();
+
+                        Response response = client.newCall(request).execute();
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }).start();
         }
     }
 }
