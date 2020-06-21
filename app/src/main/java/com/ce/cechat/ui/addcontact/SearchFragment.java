@@ -45,6 +45,7 @@ public class SearchFragment extends InjectFragment<SearchPresenter> implements I
     AppCompatImageView ivHead;
     @BindView(R.id.tv_nickname)
     AppCompatTextView tvNickname;
+
     @Nullable
     @BindView(R.id.tv_shenfen)
     AppCompatTextView tvShenfen;
@@ -149,18 +150,18 @@ public class SearchFragment extends InjectFragment<SearchPresenter> implements I
     private void hideUser() {
         ivHead.setVisibility(View.GONE);
         tvNickname.setVisibility(View.GONE);
-        tvShenfen.setVisibility(View.GONE);
-        tvIntroduction.setVisibility(View.GONE);
-        tvDepartment.setVisibility(View.GONE);
+//        tvShenfen.setVisibility(View.GONE);
+//        tvIntroduction.setVisibility(View.GONE);
+//        tvDepartment.setVisibility(View.GONE);
         tvAdd.setVisibility(View.GONE);
     }
 
     private void showUser() {
         ivHead.setVisibility(View.VISIBLE);
         tvNickname.setVisibility(View.VISIBLE);
-        tvShenfen.setVisibility(View.VISIBLE);
-        tvIntroduction.setVisibility(View.VISIBLE);
-        tvDepartment.setVisibility(View.VISIBLE);
+//        tvShenfen.setVisibility(View.VISIBLE);
+//        tvIntroduction.setVisibility(View.VISIBLE);
+//        tvDepartment.setVisibility(View.VISIBLE);
         tvAdd.setVisibility(View.VISIBLE);
     }
 
