@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 
 import com.ce.cechat.R;
+import com.ce.cechat.ui.Values;
 
 import java.util.LinkedList;
 
@@ -46,16 +47,24 @@ public class MainPageListAdapter
         holder.nickName.setText(itemData.nick_name);
         holder.publish_time.setText(itemData.publish_time);
 
-        // 初始关注按钮的状态设定
-        if(itemData.attention==true)
-            holder.attention.setBackgroundResource(R.drawable.ic_quxiaoguanzhu);
+        // 初始关注和delete按钮的状态设定
+        if(itemData.user_id.equals(Values.use_id))
+        {
+            holder.attention.setVisibility(View.GONE);
+            holder.btnDelete.setVisibility(View.VISIBLE);
+        }
         else
-            holder.attention.setBackgroundResource(R.drawable.ic_guanzhu);
-
+        {
+            holder.btnDelete.setVisibility(View.GONE);
+            holder.attention.setVisibility(View.VISIBLE);
+            if(itemData.attention==true) holder.attention.setBackgroundResource(R.drawable.ic_quxiaoguanzhu);
+            else holder.attention.setBackgroundResource(R.drawable.ic_guanzhu);
+        }
         holder.announcement_content.setText(itemData.announcement_content);
         holder.announcement_title.setText(itemData.announcement_title);
 
         holder.attention.setTag(position);  // 标记按钮处于哪
+        holder.btnDelete.setTag(position);
         holder.head_image.setTag(position);
         holder.announcement_content.setTag(position);
     }
@@ -75,6 +84,7 @@ public class MainPageListAdapter
         private TextView nickName;
         private TextView publish_time;
         private ImageButton attention;
+        private ImageButton btnDelete;
         private TextView announcement_content;
         private TextView announcement_title;
 
@@ -87,11 +97,13 @@ public class MainPageListAdapter
             nickName = (TextView)itemView.findViewById(R.id.nick_name);
             publish_time=(TextView)itemView.findViewById(R.id.publish_time);
             attention=(ImageButton)itemView.findViewById(R.id.attention);
+            btnDelete=(ImageButton)itemView.findViewById(R.id.btnDelete);
             announcement_content = (TextView)itemView.findViewById(R.id.announcement_content);
             announcement_title=(TextView)itemView.findViewById(R.id.announcement_title);
 
             //添加点击事件
             attention.setOnClickListener(MainPageListAdapter.this);
+            btnDelete.setOnClickListener(MainPageListAdapter.this);
             head_image.setOnClickListener(MainPageListAdapter.this);
             announcement_content.setOnClickListener(MainPageListAdapter.this);
 

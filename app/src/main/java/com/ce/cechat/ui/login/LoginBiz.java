@@ -3,6 +3,7 @@ package com.ce.cechat.ui.login;
 
 import com.ce.cechat.bean.User;
 import com.ce.cechat.data.biz.DbBiz;
+import com.ce.cechat.ui.Values;
 import com.ce.cechat.utils.ThreadPools;
 import com.hyphenate.EMCallBack;
 import com.hyphenate.chat.EMClient;
@@ -22,6 +23,7 @@ public class LoginBiz extends AbstractLoginBiz implements ILoginContract.ILoginB
 
     @Override
     public void onLogin(final String pName, final String pPassword, final EMCallBack pLoginListener) {
+        Values.use_id = pName;
         ThreadPools.newInstance().execute(new Runnable() {
             @Override
             public void run() {

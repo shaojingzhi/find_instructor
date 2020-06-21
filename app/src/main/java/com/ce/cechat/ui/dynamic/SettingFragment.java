@@ -120,6 +120,16 @@ public class SettingFragment extends BaseFragment {
             {
                 flagForThread2=false;
             }
+            else if(msg.what==102)  // 需要清空infolist
+            {
+                infoList.clear();
+                if(newInfos != null) {
+                    infoList.addAll(newInfos);
+                    newInfos=null;
+                    mainPageListAdapter.notifyDataSetChanged();
+                }
+                flagForThread=false;
+            }
         }
     };
 
@@ -202,7 +212,6 @@ public class SettingFragment extends BaseFragment {
             public void afterTextChanged(Editable s) {
                 searchStr = search.getText().toString();
                 //TODO
-                infoList.clear();
                 if(!flagForThread) {
                     new Thread(new Runnable() {
                         @Override
@@ -210,7 +219,7 @@ public class SettingFragment extends BaseFragment {
                             flagForThread = true;
                             newInfos = infoItemList.getMoreItems(searchStr, true);
                             Message msg = new Message();
-                            msg.what = 100;
+                            msg.what = 102;
                             handler.sendMessage(msg);
                         }
                     }).start();
@@ -223,7 +232,6 @@ public class SettingFragment extends BaseFragment {
             @Override
             public void onRefresh() {
                 // 此处考虑多线程？
-                infoList.clear();
                 if(!flagForThread)
                 {
                     new Thread(new Runnable() {
@@ -232,7 +240,7 @@ public class SettingFragment extends BaseFragment {
                             flagForThread=true;
                             newInfos = infoItemList.getMoreItems(searchStr,true);
                             Message msg = new Message();
-                            msg.what=100;
+                            msg.what=102;
                             handler.sendMessage(msg);
                         }
                     }).start();
@@ -298,25 +306,46 @@ public class SettingFragment extends BaseFragment {
                     {
                         case R.id.attention:
                             attentionBtnClick(v,position);
-                            System.out.println(position+" attention");
-                            Log.d("attention","success "+position);
+                            break;
+                        case R.id.btnDelete:
+                            deleteBtnCilck(v,position);
                             break;
                         case R.id.head_image:  // 头像点击事件处理
-                            System.out.println(position+" head");
-                            Log.d("head","success "+position);
                             break;
                         case R.id.announcement_content:// 内容点击事件处理
-                            System.out.println(position+" announcement_content");
-                            Log.d("announcement_content","success "+position);
                             break;
                         default:
-                            System.out.println(position+" item");
-                            Log.d("item","success "+position);
                             break;
                     }
                 }
             }
         });
+    }
+
+    private void deleteBtnCilck(View v,final int position)
+    {
+        ImageButton deleteButton = (ImageButton)v;
+        final InfoItem deleteItem = infoList.get(position);
+        infoList.remove(position);
+        mainPageListAdapter.notifyDataSetChanged();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    OkHttpClient client = new OkHttpClient();
+                    RequestBody requestBody = new FormBody.Builder()
+                            .add("user_id", Values.use_id)
+                            .add("announcement_id",String.valueOf(deleteItem.announcement_id))
+                            .build();
+
+                    Request request = new Request.Builder().url(Values.rootIP+"/user/deleteAnnouncement").post(requestBody).build();
+                    client.newCall(request).execute();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
     }
 
     // “关注” 按钮点击事件
@@ -336,7 +365,7 @@ public class SettingFragment extends BaseFragment {
                         try {
                             OkHttpClient client = new OkHttpClient();
                             RequestBody requestBody = new FormBody.Builder()
-                                    .add("user_id", "newuser")
+                                    .add("user_id", Values.use_id)
                                     .add("to_user_id",infoList.get(position).user_id)
                                     .build();
 
@@ -365,7 +394,7 @@ public class SettingFragment extends BaseFragment {
                         try {
                             OkHttpClient client = new OkHttpClient();
                             RequestBody requestBody = new FormBody.Builder()
-                                    .add("user_id", "newuser")
+                                    .add("user_id", Values.use_id)
                                     .add("to_user_id",infoList.get(position).user_id)
                                     .build();
 
@@ -407,7 +436,7 @@ public class SettingFragment extends BaseFragment {
                     try {
                         OkHttpClient client = new OkHttpClient();
                         RequestBody requestBody = new FormBody.Builder()
-                                .add("user_id", "newuser")
+                                .add("user_id", Values.use_id)
                                 .add("announcement_title",new_title)
                                 .add("announcement_content",new_content)
                                 .build();

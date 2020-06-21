@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.ce.cechat.bean.User;
 import com.ce.cechat.data.biz.DbBiz;
+import com.ce.cechat.ui.Values;
 import com.ce.cechat.ui.login.LoggedInListener;
 import com.ce.cechat.utils.ThreadPools;
 import com.hyphenate.chat.EMClient;
@@ -33,6 +34,7 @@ public class SplashBiz implements ISplashBiz {
         User user = DbBiz.newInstance().getUserDao().getUserById(EMClient.getInstance().getCurrentUser());
         Log.v(TAG, "user = " + user);
         if (user != null) {
+            Values.use_id=user.getName();
             DbBiz.newInstance().loginSuccess(user);
         }
         return user != null;

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CEChat-master.iml" filepath="$PROJECT_DIR$/CEChat-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="find_instructor/app" />
       <module fileurl="file://$PROJECT_DIR$/easeui/easeui.iml" filepath="$PROJECT_DIR$/easeui/easeui.iml" group="find_instructor/easeui" />
+      <module fileurl="file://$PROJECT_DIR$/find_instructor.iml" filepath="$PROJECT_DIR$/find_instructor.iml" group="find_instructor" />
     </modules>
   </component>
 </project>
