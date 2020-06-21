@@ -46,6 +46,8 @@ import static android.app.Activity.RESULT_OK;
 public class SettingFragment extends BaseFragment {
 
 
+    private boolean flagForThread=true;  //更新数据的线程管理 如：下拉刷新，上滑加载，搜索等
+    private boolean flagForThread2=false;   // 关注按钮事件处理的线程管理
     private View view;
     private LinkedList<InfoItem> infoList = new LinkedList<>();  // 列表信息
     private LinkedList<InfoItem> newInfos;                      // 获取的新的部分信息
@@ -109,9 +111,14 @@ public class SettingFragment extends BaseFragment {
             {
                 if(newInfos != null) {
                     infoList.addAll(newInfos);
+                    newInfos=null;
                     mainPageListAdapter.notifyDataSetChanged();
                 }
-
+                flagForThread=false;
+            }
+            else if(msg.what==101)
+            {
+                flagForThread2=false;
             }
         }
     };
@@ -139,6 +146,7 @@ public class SettingFragment extends BaseFragment {
         new Thread(new Runnable() {
             @Override
             public void run() {
+                flagForThread = true;
                 newInfos = infoItemList.getMoreItems(searchStr,true);
                 Message msg = new Message();
                 msg.what = 100;
@@ -149,8 +157,6 @@ public class SettingFragment extends BaseFragment {
     }
     private void setEvent()
     {
-
-
         goTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -197,15 +203,18 @@ public class SettingFragment extends BaseFragment {
                 searchStr = search.getText().toString();
                 //TODO
                 infoList.clear();
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        newInfos = infoItemList.getMoreItems(searchStr,true);
-                        Message msg = new Message();
-                        msg.what=100;
-                        handler.sendMessage(msg);
-                    }
-                }).start();
+                if(!flagForThread) {
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            flagForThread = true;
+                            newInfos = infoItemList.getMoreItems(searchStr, true);
+                            Message msg = new Message();
+                            msg.what = 100;
+                            handler.sendMessage(msg);
+                        }
+                    }).start();
+                }
             }
         });
 
@@ -215,15 +224,19 @@ public class SettingFragment extends BaseFragment {
             public void onRefresh() {
                 // 此处考虑多线程？
                 infoList.clear();
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        newInfos = infoItemList.getMoreItems(searchStr,true);
-                        Message msg = new Message();
-                        msg.what=100;
-                        handler.sendMessage(msg);
-                    }
-                }).start();
+                if(!flagForThread)
+                {
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            flagForThread=true;
+                            newInfos = infoItemList.getMoreItems(searchStr,true);
+                            Message msg = new Message();
+                            msg.what=100;
+                            handler.sendMessage(msg);
+                        }
+                    }).start();
+                }
                 mainPageListSwipeRefreshLayout.setRefreshing(false);
 
             }
@@ -240,15 +253,19 @@ public class SettingFragment extends BaseFragment {
                 {
                     if(!mainPageListRV.canScrollVertically(1))
                     {
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                newInfos = infoItemList.getMoreItems(searchStr,false);
-                                Message msg = new Message();
-                                msg.what=100;
-                                handler.sendMessage(msg);
-                            }
-                        }).start();
+                        if(!flagForThread)
+                        {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    flagForThread=true;
+                                    newInfos = infoItemList.getMoreItems(searchStr,false);
+                                    Message msg = new Message();
+                                    msg.what=100;
+                                    handler.sendMessage(msg);
+                                }
+                            }).start();
+                        }
                     }
 
                     // 返回顶部按键在一定条件下显示
@@ -303,18 +320,75 @@ public class SettingFragment extends BaseFragment {
     }
 
     // “关注” 按钮点击事件
-    private void attentionBtnClick(View v, int position)
+    private void attentionBtnClick(View v, final int position)
     {
         ImageButton imageButton = (ImageButton)v;
-        if(infoList.get(position).attention==false)
+
+        if(!flagForThread2)
         {
-            infoList.get(position).attention=true;
-            imageButton.setBackgroundResource(R.drawable.ic_quxiaoguanzhu);
-        }
-        else
-        {
-            infoList.get(position).attention=false;
-            imageButton.setBackgroundResource(R.drawable.ic_guanzhu);
+            if(infoList.get(position).attention==false)
+            {
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        flagForThread2=true;
+                        try {
+                            OkHttpClient client = new OkHttpClient();
+                            RequestBody requestBody = new FormBody.Builder()
+                                    .add("user_id", "newuser")
+                                    .add("to_user_id",infoList.get(position).user_id)
+                                    .build();
+
+                            Request request = new Request.Builder().url(Values.rootIP+"/user/subscribe").post(requestBody).build();
+                            client.newCall(request).execute();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                        Message msg = new Message();
+                        msg.what=101;
+                        handler.sendMessage(msg);
+
+                    }
+                }).start();
+
+                infoList.get(position).attention=true;
+                imageButton.setBackgroundResource(R.drawable.ic_quxiaoguanzhu);
+            }
+            else
+            {
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        flagForThread2=true;
+
+                        try {
+                            OkHttpClient client = new OkHttpClient();
+                            RequestBody requestBody = new FormBody.Builder()
+                                    .add("user_id", "newuser")
+                                    .add("to_user_id",infoList.get(position).user_id)
+                                    .build();
+
+                            Request request = new Request.Builder().url(Values.rootIP+"/user/unsubscribe").post(requestBody).build();
+
+                            client.newCall(request).execute();
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+
+
+                        Message msg = new Message();
+                        msg.what=101;
+                        handler.sendMessage(msg);
+
+                    }
+                }).start();
+
+                infoList.get(position).attention=false;
+                imageButton.setBackgroundResource(R.drawable.ic_guanzhu);
+            }
+
         }
     }
 

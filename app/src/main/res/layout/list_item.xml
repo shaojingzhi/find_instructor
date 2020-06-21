@@ -9,11 +9,12 @@
     android:layout_width="match_parent"
 
     android:clickable="true"
-    app:cardCornerRadius="6dp"
+    app:cardCornerRadius="10dp"
     app:cardBackgroundColor="@color/color_white"
     app:cardUseCompatPadding="false"
     app:cardPreventCornerOverlap="true"
     app:cardElevation="1dp"
+    android:layout_margin="5dp"
     >
 
     <LinearLayout
@@ -72,7 +73,8 @@
 
                         android:text="王继良"
                         android:textColor="#FC0B0112"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        android:padding="1dp"/>
 
                     <TextView
                         android:id="@+id/publish_time"
@@ -96,6 +98,28 @@
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/announcement_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="ANNOUNCEMENT"
+                android:textColor="#1B0101"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:singleLine="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#FFE8EDF3"
+                android:clickable="false" />
 
             <TextView
                 android:id="@+id/announcement_content"
@@ -105,15 +129,9 @@
                 android:clickable="true"
                 android:text="招收计算机系学生，有意向与我联系"
                 android:textColor="#1B0101"
-                android:textSize="16sp" />
+                android:textSize="17sp"
+                android:padding="3dp"/>
         </LinearLayout>
-
-        <!--        分割线-->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="#FFE8EDF3"
-            android:clickable="false" />
     </LinearLayout>
 
 </android.support.v7.widget.CardView>

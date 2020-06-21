@@ -74,7 +74,6 @@ public class InfoItemList {
                         newItem.user_id = j.getString("user_id");
 
 
-                        System.out.println(Values.rootIP + j.getString("photo_path").substring(1)+"/1.jpg");
                         // 获取图片
                         URL url=new URL(Values.rootIP + j.getString("photo_path").substring(1)+"/1.jpg");
                         HttpURLConnection conn;
