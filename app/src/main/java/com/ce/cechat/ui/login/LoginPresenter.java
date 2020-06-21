@@ -1,13 +1,21 @@
 package com.ce.cechat.ui.login;
 
 import android.util.Log;
+import android.widget.Toast;
 
 import com.ce.cechat.app.BasePresenter;
 import com.hyphenate.EMCallBack;
 
 import javax.inject.Inject;
 
-
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import com.ce.cechat.ui.Values;
+import org.json.JSONArray;
+import org.json.JSONObject;
 /**
  * @author CE Chen
  *
@@ -86,6 +94,7 @@ public class LoginPresenter extends BasePresenter<ILoginContract.ILoginView, Log
      */
     @Override
     public void login() {
+
         mBiz.onLogin(mView.getUserId(), mView.getPassword(), new EMCallBack() {
             @Override
             public void onSuccess() {
@@ -94,6 +103,21 @@ public class LoginPresenter extends BasePresenter<ILoginContract.ILoginView, Log
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
+                        new Thread(new Runnable() {
+                            @Override
+                            public void run() {
+                                try {
+                                    OkHttpClient client = new OkHttpClient();
+                                    RequestBody requestBody = new FormBody.Builder().add("user_id", mView.getUserId()).add("user_password", mView.getPassword()).build();
+                                    Request request = new Request.Builder().url(Values.rootIP + "/user/Login").post(requestBody).addHeader("Connection", "application/json").build();
+                                    Response response = client.newCall(request).execute();
+                                    String responseData = response.body().string();
+
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }).start();
                         //登录成功
                         if (mView != null) {
                             mView.onSuccess();

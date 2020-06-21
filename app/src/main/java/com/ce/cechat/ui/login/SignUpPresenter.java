@@ -1,5 +1,6 @@
 package com.ce.cechat.ui.login;
 
+import android.os.Message;
 import android.util.Log;
 
 import com.ce.cechat.app.BasePresenter;
@@ -7,11 +8,17 @@ import com.hyphenate.exceptions.HyphenateException;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Sign in presenter
- */
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import com.ce.cechat.ui.Values;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.IOException;
+
 public class SignUpPresenter extends BasePresenter<ISignUpContract.ISignUpView, SignUpBiz> implements ISignUpContract.IPresenter {
 
     private static final String TAG = "SignUpPresenter";
@@ -154,6 +161,27 @@ public class SignUpPresenter extends BasePresenter<ISignUpContract.ISignUpView, 
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
+
+                        new Thread(new Runnable() {
+                            @Override
+
+                            public void run() {
+                                OkHttpClient client = new OkHttpClient();
+                                //RequestBody requestBody = new FormBody.Builder().add("userName", email).add("password", password).build();
+                                RequestBody requestBody = new FormBody.Builder().add("user_id", mView.getUserId()).add("user_password", mView.getPassword()).build();
+                                String url = Values.rootIP + "/Admin/Register";
+                                Request request = new Request.Builder().url(url).post(requestBody).addHeader("Content-Type","application/json").build();
+                                Response response = null;
+                                try {
+                                    response = client.newCall(request).execute();
+                                    String responseData = response.body().string();
+                                    System.out.println(responseData);
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }).start();
+
                         //注册成功
                         if (mView != null) {
                             mView.onSuccess();
