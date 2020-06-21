@@ -109,9 +109,6 @@ public class UserDao extends AbstractDao{
         user.setName(pCursor.getString(pCursor.getColumnIndex(UserTable.NAME)));
         user.setNickname(pCursor.getString(pCursor.getColumnIndex(UserTable.NICKNAME)));
         user.setHead(pCursor.getString(pCursor.getColumnIndex(UserTable.HEAD)));
-        user.setShenfen(pCursor.getString(pCursor.getColumnIndex(UserTable.SHENFEN)));
-        user.setDepartment(pCursor.getString(pCursor.getColumnIndex(UserTable.DEPARTMENT)));
-        user.setIntroduction(pCursor.getString(pCursor.getColumnIndex(UserTable.INTRODUCTION)));
         return user;
     }
 

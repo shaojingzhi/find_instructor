@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,6 +17,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +26,10 @@ import com.ce.cechat.R;
 import com.ce.cechat.app.BaseActivity;
 import com.ce.cechat.app.BaseFragment;
 import com.ce.cechat.app.EventListener;
+import com.ce.cechat.ui.Values;
+import com.ce.cechat.ui.addcontact.ChangeInfo;
+import com.ce.cechat.ui.dynamic.SettingFragment;
+import com.ce.cechat.ui.dynamic.newAnnouncement;
 import com.ce.cechat.utils.ErrorCode;
 import com.ce.cechat.ui.login.LoginActivity;
 
@@ -34,11 +41,17 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.jiguang.analytics.android.api.JAnalyticsInterface;
 import cn.sharesdk.onekeyshare.OnekeyShare;
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
-/**
- * @author CE Chen
- *
- */
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+
 public class MainActivity extends BaseActivity<MainPresenter>
         implements BaseFragment.OnFragmentInteractionListener,
         NavigationView.OnNavigationItemSelectedListener,
@@ -59,8 +72,10 @@ public class MainActivity extends BaseActivity<MainPresenter>
     private TextView mTvNickName;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
@@ -155,14 +170,56 @@ public class MainActivity extends BaseActivity<MainPresenter>
     }
 
     private void about() {
-        View view = LayoutInflater.from(this).inflate(R.layout.view_about_dialog, null, false);
+        //Intent intent = new Intent(MainActivity.this, ChangeInfo.class);
+        //startActivity(intent);
+
+        final View view = LayoutInflater.from(this).inflate(R.layout.activity_change_info, null, false);
         new android.app.AlertDialog.Builder(this)
                 .setView(view)
                 .setPositiveButton(getResources().getString(R.string.ok), new DialogInterface.OnClickListener() {
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+
+                        //dialog.dismiss();
+                        @Nullable
+                        EditText identity;
+                        @Nullable
+                        EditText department;
+                        @Nullable
+                        EditText entryyear;
+                        @Nullable
+                        EditText introduction;
+
+                        identity = (EditText)view.findViewById(R.id.identity);
+                        //Log.d(TAG, identity.getText().toString());
+                        final String sidentity = identity.getText().toString();
+
+                        department = view.findViewById(R.id.department);
+                        final String sdepartment = department.getText().toString();
+                        entryyear = view.findViewById(R.id.entryyear);
+                        final String sentryyear = entryyear.getText().toString();
+                        introduction = view.findViewById(R.id.introduction);
+                        final String sintroduction = introduction.getText().toString();
+
+                        new Thread(new Runnable() {
+                            @Override
+                            public void run() {
+                                try {
+                                    OkHttpClient client = new OkHttpClient();
+                                    RequestBody requestBody = new FormBody.Builder().add("user_id", Values.use_id).add("user_role",sidentity).add("user_sex","male").add("user_introduction",sintroduction).add("user_photo_path","/photo/default.jpg").add("user_department",sdepartment).add("user_entry_year",sentryyear).add("user_nickname",Values.use_id).build();
+                                    Request request = new Request.Builder().url(Values.rootIP + "/user/updateUserInfo").post(requestBody).addHeader("Connection", "application/json").build();
+                                    Response response = client.newCall(request).execute();
+                                    String responseData = response.body().string();
+                                    Log.d(TAG, responseData);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }).start();
+
                         dialog.dismiss();
+
                     }
                 }).show();
     }
