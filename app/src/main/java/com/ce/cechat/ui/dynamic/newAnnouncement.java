@@ -19,7 +19,7 @@ public class newAnnouncement extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_announcement);
-
+        getSupportActionBar().hide();
 
         new_title = findViewById(R.id.new_title);
         new_content = findViewById(R.id.new_content);

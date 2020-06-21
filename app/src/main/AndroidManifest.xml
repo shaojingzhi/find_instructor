@@ -33,7 +33,10 @@
         android:supportsRtl="true"
         android:theme="@style/ChatAppTheme"
         tools:ignore="GoogleAppIndexingWarning"
-        tools:replace="android:name">
+        tools:replace="android:name"
+        android:windowSoftInputMode="adjustPan"
+        >
+
         <activity android:name=".ui.dynamic.newAnnouncement"></activity>
         <!-- 设置环信应用的AppKey -->
         <meta-data

@@ -46,6 +46,8 @@ import static android.app.Activity.RESULT_OK;
 public class SettingFragment extends BaseFragment {
 
 
+    private boolean flagForThread=true;
+
     private View view;
     private LinkedList<InfoItem> infoList = new LinkedList<>();  // 列表信息
     private LinkedList<InfoItem> newInfos;                      // 获取的新的部分信息
@@ -109,9 +111,10 @@ public class SettingFragment extends BaseFragment {
             {
                 if(newInfos != null) {
                     infoList.addAll(newInfos);
+                    newInfos=null;
                     mainPageListAdapter.notifyDataSetChanged();
                 }
-
+                flagForThread=false;
             }
         }
     };
@@ -139,6 +142,7 @@ public class SettingFragment extends BaseFragment {
         new Thread(new Runnable() {
             @Override
             public void run() {
+                flagForThread = true;
                 newInfos = infoItemList.getMoreItems(searchStr,true);
                 Message msg = new Message();
                 msg.what = 100;
@@ -149,8 +153,6 @@ public class SettingFragment extends BaseFragment {
     }
     private void setEvent()
     {
-
-
         goTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -197,15 +199,18 @@ public class SettingFragment extends BaseFragment {
                 searchStr = search.getText().toString();
                 //TODO
                 infoList.clear();
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        newInfos = infoItemList.getMoreItems(searchStr,true);
-                        Message msg = new Message();
-                        msg.what=100;
-                        handler.sendMessage(msg);
-                    }
-                }).start();
+                if(!flagForThread) {
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            flagForThread = true;
+                            newInfos = infoItemList.getMoreItems(searchStr, true);
+                            Message msg = new Message();
+                            msg.what = 100;
+                            handler.sendMessage(msg);
+                        }
+                    }).start();
+                }
             }
         });
 
@@ -215,15 +220,19 @@ public class SettingFragment extends BaseFragment {
             public void onRefresh() {
                 // 此处考虑多线程？
                 infoList.clear();
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        newInfos = infoItemList.getMoreItems(searchStr,true);
-                        Message msg = new Message();
-                        msg.what=100;
-                        handler.sendMessage(msg);
-                    }
-                }).start();
+                if(!flagForThread)
+                {
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            flagForThread=true;
+                            newInfos = infoItemList.getMoreItems(searchStr,true);
+                            Message msg = new Message();
+                            msg.what=100;
+                            handler.sendMessage(msg);
+                        }
+                    }).start();
+                }
                 mainPageListSwipeRefreshLayout.setRefreshing(false);
 
             }
@@ -240,15 +249,19 @@ public class SettingFragment extends BaseFragment {
                 {
                     if(!mainPageListRV.canScrollVertically(1))
                     {
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                newInfos = infoItemList.getMoreItems(searchStr,false);
-                                Message msg = new Message();
-                                msg.what=100;
-                                handler.sendMessage(msg);
-                            }
-                        }).start();
+                        if(!flagForThread)
+                        {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    flagForThread=true;
+                                    newInfos = infoItemList.getMoreItems(searchStr,false);
+                                    Message msg = new Message();
+                                    msg.what=100;
+                                    handler.sendMessage(msg);
+                                }
+                            }).start();
+                        }
                     }
 
                     // 返回顶部按键在一定条件下显示
