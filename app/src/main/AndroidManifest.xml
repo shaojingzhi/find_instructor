@@ -32,13 +32,11 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/ChatAppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        tools:replace="android:name"
         android:windowSoftInputMode="adjustPan"
-        >
-
-        <activity android:name=".ui.dynamic.newAnnouncement"></activity>
-        <!-- 设置环信应用的AppKey -->
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:name">
+        <activity android:name=".ui.dynamic.UserInfo"></activity>
+        <activity android:name=".ui.dynamic.newAnnouncement" /> <!-- 设置环信应用的AppKey -->
         <meta-data
             android:name="EASEMOB_APPKEY"
             android:value="1111180606228105#cechat" /> <!-- 声明SDK所需的service SDK核心功能 -->
@@ -64,7 +62,7 @@
         <service
             android:name="cn.jpush.android.service.PushService"
             android:process=":multiprocess"
-            tools:node="replace"></service>
+            tools:node="replace" />
 
         <activity
             android:name=".ui.splash.SplashActivity"

@@ -89,9 +89,6 @@ public class SettingFragment extends BaseFragment {
     @Override
     protected void initView(View view) {
         this.view=view;
-        String s = Values.use_id;
-        Values.use_id = "ss";
-        s=Values.use_id;
         initRecyclerView();
     }
 
@@ -314,6 +311,7 @@ public class SettingFragment extends BaseFragment {
                             deleteBtnCilck(v,position);
                             break;
                         case R.id.head_image:  // 头像点击事件处理
+                            headImageClick(v,position);
                             break;
                         case R.id.announcement_content:// 内容点击事件处理
                             break;
@@ -323,6 +321,14 @@ public class SettingFragment extends BaseFragment {
                 }
             }
         });
+    }
+
+
+    private void headImageClick(View v,int position)
+    {
+        Intent intent = new Intent(SettingFragment.this.getActivity(), UserInfo.class);
+        intent.putExtra("user_id",infoList.get(position).user_id);
+        startActivity(intent);
     }
 
     private void deleteBtnCilck(View v,final int position)
