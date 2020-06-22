@@ -189,7 +189,10 @@ public class MainActivity extends BaseActivity<MainPresenter>
                         EditText introduction;
 
                         identity = (EditText)view.findViewById(R.id.identity);
-                        final String sidentity = identity.getText().toString();
+                        String sidentity = identity.getText().toString();
+                        if (!sidentity.equals("student")&&!sidentity.equals("teacher"))
+                            sidentity = "student";
+                        final String fidentity = sidentity;
 
                         department = view.findViewById(R.id.department);
                         final String sdepartment = department.getText().toString();
@@ -198,7 +201,10 @@ public class MainActivity extends BaseActivity<MainPresenter>
                         final String snickname = nickname.getText().toString();
 
                         sex = view.findViewById(R.id.sex);
-                        final String ssex = sex.getText().toString();
+                        String ssex = sex.getText().toString();
+                        if (!ssex.equals("male")&&!ssex.equals("female"))
+                            ssex = "male";
+                        final String fsex = ssex;
 
                         introduction = view.findViewById(R.id.introduction);
                         final String sintroduction = introduction.getText().toString();
@@ -208,7 +214,7 @@ public class MainActivity extends BaseActivity<MainPresenter>
                             public void run() {
                                 try {
                                     OkHttpClient client = new OkHttpClient();
-                                    RequestBody requestBody = new FormBody.Builder().add("user_id", Values.use_id).add("user_role",sidentity).add("user_sex",ssex).add("user_introduction",sintroduction).add("user_photo_path","/photo/default.jpg").add("user_department",sdepartment).add("user_entry_year","1900").add("user_nickname",snickname).build();
+                                    RequestBody requestBody = new FormBody.Builder().add("user_id", Values.use_id).add("user_role",fidentity).add("user_sex",fsex).add("user_introduction",sintroduction).add("user_photo_path","/photo/default.jpg").add("user_department",sdepartment).add("user_entry_year","1900").add("user_nickname",snickname).build();
                                     Request request = new Request.Builder().url(Values.rootIP + "/user/updateUserInfo").post(requestBody).addHeader("Connection", "application/json").build();
                                     Response response = client.newCall(request).execute();
                                     String responseData = response.body().string();
