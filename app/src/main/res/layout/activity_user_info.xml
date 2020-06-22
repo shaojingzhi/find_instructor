@@ -35,7 +35,7 @@
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/ic_fanhui"
                 android:clickable="true"
-                 />
+                />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/view_head_image"
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:padding="3dp"
-                android:text="ssssssssssss"
+                android:text=""
                 android:textColor="#0B0000"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="52dp"
@@ -114,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:padding="3dp"
-                android:text="ssssssssssss"
+                android:text=""
                 android:textColor="#0B0000"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="52dp"
@@ -150,7 +150,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:padding="3dp"
-                android:text="ssssssssssss"
+                android:text=""
                 android:textColor="#0B0000"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="52dp"
@@ -186,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:padding="3dp"
-                android:text="ssssssssssss"
+                android:text=""
                 android:textColor="#0B0000"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="52dp"
@@ -222,7 +222,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="6dp"
                 android:padding="3dp"
-                android:text="ssssssssssss"
+                android:text=""
                 android:textColor="#0B0000"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="52dp"
