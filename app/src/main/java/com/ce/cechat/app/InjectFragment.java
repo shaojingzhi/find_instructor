@@ -5,11 +5,6 @@ import android.support.annotation.Nullable;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public abstract class InjectFragment<T extends IBaseContact.IBasePresenter> extends BaseFragment
         implements IBaseContact.IBaseView {
 

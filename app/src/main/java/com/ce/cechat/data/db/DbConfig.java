@@ -1,11 +1,5 @@
 package com.ce.cechat.data.db;
 
-/**
- * @author cekiasoo
- *
- *
- * 数据库配置类
- */
 
 public class DbConfig {
 

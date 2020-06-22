@@ -11,11 +11,7 @@ import com.ce.cechat.data.db.DbHelper;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * @author CE Chen
- *
- * 联系人数据库操作类
- */
+
 public class ContactDao extends AbstractDao{
 
     private DbHelper mContactDb;

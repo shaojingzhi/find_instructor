@@ -1,10 +1,6 @@
 package com.ce.cechat.bean;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 : 群成员
- */
+
 public class GroupMember extends User{
 
     /**

@@ -5,11 +5,6 @@ import android.os.Parcelable;
 
 import java.io.Serializable;
 
-/**
- * @author CE Chen
- *
- * User bean
- */
 public class User implements Parcelable, Serializable {
 
     protected String hyphenateId;

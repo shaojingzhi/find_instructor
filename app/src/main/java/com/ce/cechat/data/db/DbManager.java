@@ -6,11 +6,6 @@ import android.support.annotation.Nullable;
 import com.ce.cechat.data.dao.ContactDao;
 import com.ce.cechat.data.dao.InvitationDao;
 
-/**
- * @author CE Chen
- *
- * 数据库管理类
- */
 public class DbManager {
 
     private DbHelper mDbHelper;

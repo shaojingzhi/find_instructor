@@ -1,17 +1,8 @@
 package com.ce.cechat.app;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public interface IBaseContact {
 
-    /**
-     * @author CE Chen
-     * <p>
-     * 作用 :
-     */
+
     public interface IBasePresenter<T extends IBaseView> {
 
         /**

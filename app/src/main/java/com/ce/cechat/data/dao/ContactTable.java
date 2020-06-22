@@ -1,10 +1,6 @@
 package com.ce.cechat.data.dao;
 
-/**
- * @author CE Chen
- *
- * Contact 联系人表相关 表名 字段 建表语句
- */
+
 public class ContactTable {
 
     public static final String TABLE_NAME = "contact_table";

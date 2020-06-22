@@ -6,12 +6,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.ce.cechat.data.dao.UserTable;
 
-/**
- * @author CE Chen
- *
- * 数据库类
- *
- */
 public class UserDbHelper extends SQLiteOpenHelper {
 
     private volatile static UserDbHelper mUserDbHelper;

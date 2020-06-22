@@ -5,11 +5,6 @@ import android.support.annotation.IntDef;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/**
- * @author CE Chen
- *
- * 邀请
- */
 public class Invitation {
 
     private User user;

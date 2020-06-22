@@ -1,10 +1,5 @@
 package com.ce.cechat.data.dao;
 
-/**
- * @author CE Chen
- *
- * User 表相关 表名 字段 建表语句
- */
 public class UserTable {
 
     public static final String TABLE_NAME = "user_table";

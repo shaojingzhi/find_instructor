@@ -1,9 +1,6 @@
 package com.ce.cechat.data.dao;
 
 
-/**
- * @author CE Chen
- */
 public class InvitationTable {
 
     public static final String TABLE_NAME = "invitation_table";

@@ -6,11 +6,6 @@ import dagger.Subcomponent;
 import dagger.android.AndroidInjector;
 import dagger.android.support.AndroidSupportInjectionModule;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 @Subcomponent(modules = AndroidSupportInjectionModule.class)
 public interface ContactFragmentComponent extends AndroidInjector<ContactFragment> {
 

@@ -13,11 +13,7 @@ import com.ce.cechat.data.db.DbHelper;
 
 import java.util.List;
 
-/**
- * @author CE Chen
- *
- * 邀请表的操作类
- */
+
 public class InvitationDao extends AbstractDao{
 
     private static final String TAG = "InvitationDao";

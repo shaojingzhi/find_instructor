@@ -25,14 +25,7 @@ import androidx.navigation.Navigation;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * @author CE Chen
- * <p>
- * 搜索添加好友
- * <p>
- * Use the {@link SearchFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class SearchFragment extends InjectFragment<SearchPresenter> implements ISearchContract.ISearchView {
 
     @BindView(R.id.lay_content)

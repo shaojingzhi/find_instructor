@@ -12,11 +12,6 @@ import dagger.android.AndroidInjectionModule;
 import dagger.android.AndroidInjector;
 import dagger.android.support.AndroidSupportInjectionModule;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 @Component(modules = {
         AndroidInjectionModule.class,
         AndroidSupportInjectionModule.class,

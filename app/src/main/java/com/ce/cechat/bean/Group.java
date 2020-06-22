@@ -1,10 +1,5 @@
 package com.ce.cechat.bean;
 
-/**
- * @author CE Chen
- *
- * 群组
- */
 public class Group {
 
     private String groupName;

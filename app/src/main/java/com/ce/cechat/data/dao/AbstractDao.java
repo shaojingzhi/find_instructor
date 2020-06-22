@@ -6,11 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
+
 public abstract class AbstractDao {
 
     protected abstract SQLiteDatabase getSQLiteDatabase();

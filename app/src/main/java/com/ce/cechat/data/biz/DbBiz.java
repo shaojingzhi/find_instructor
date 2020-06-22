@@ -6,11 +6,6 @@ import com.ce.cechat.bean.User;
 import com.ce.cechat.data.dao.UserDao;
 import com.ce.cechat.data.db.DbManager;
 
-/**
- * @author CE Chen
- *
- * 数据库业务逻辑操作类
- */
 public class DbBiz implements IDbBiz {
 
     private volatile static DbBiz sDbBiz;

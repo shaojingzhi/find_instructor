@@ -11,9 +11,6 @@ import com.ce.cechat.data.db.UserDbHelper;
 
 import java.util.List;
 
-/**
- * @author CE Chen
- */
 public class UserDao extends AbstractDao{
 
     private static final String TAG = "UserDao";

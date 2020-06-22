@@ -8,11 +8,7 @@ import android.support.annotation.Nullable;
 import com.ce.cechat.data.dao.ContactTable;
 import com.ce.cechat.data.dao.InvitationTable;
 
-/**
- * @author CE Chen
- *
- * 联系人数据库
- */
+
 public class DbHelper extends SQLiteOpenHelper {
 
     /**

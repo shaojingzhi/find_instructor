@@ -26,11 +26,6 @@ import org.greenrobot.eventbus.EventBus;
 import java.util.List;
 
 
-/**
- * @author CE Chen
- *
- * 消息的监听类
- */
 public class EventListener {
 
     private volatile static EventListener sEventListener;
