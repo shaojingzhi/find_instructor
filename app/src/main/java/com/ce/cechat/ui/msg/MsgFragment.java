@@ -16,14 +16,6 @@ import java.util.List;
 
 import androidx.navigation.Navigation;
 
-/**
- * @author CE Chen
- *
- * 消息
- *
- * Use the {@link MsgFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class MsgFragment extends EaseConversationListFragment implements EMMessageListener,
         EaseConversationListFragment.EaseConversationListItemClickListener {
 

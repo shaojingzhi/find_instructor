@@ -36,13 +36,7 @@ import dagger.android.DispatchingAndroidInjector;
 import dagger.android.support.AndroidSupportInjection;
 import dagger.android.support.HasSupportFragmentInjector;
 
-/**
- * @author CE Chen
- *
- * 联系人
- * Use the {@link ContactFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class ContactFragment extends EaseContactListFragment
         implements ContactContract.IContactView,
         EaseContactListFragment.EaseContactListItemClickListener,

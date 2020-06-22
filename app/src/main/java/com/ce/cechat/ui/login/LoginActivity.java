@@ -11,11 +11,6 @@ import com.ce.cechat.ui.main.MainActivity;
 
 import androidx.navigation.Navigation;
 
-/**
- * @author CE Chen
- *
- * A login screen that offers login via email/password.
- */
 public class LoginActivity extends AppCompatActivity implements BaseFragment.OnFragmentInteractionListener{
 
     @Override

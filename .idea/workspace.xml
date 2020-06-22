@@ -15,10 +15,85 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/di/ActivityScoped.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/di/ActivityScoped.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/addcontact/ISearchContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/addcontact/ISearchContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/addcontact/SearchBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/addcontact/SearchBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/addcontact/SearchFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/addcontact/SearchFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/addcontact/SearchModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/addcontact/SearchModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/addcontact/SearchPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/addcontact/SearchPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/chat/ChatActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/chat/ChatActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/chat/ChatFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/chat/ChatFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/chat/GroupMemberAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/chat/GroupMemberAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/chat/IDestroyGroupListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/chat/IDestroyGroupListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/ContactBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/ContactBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/ContactContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/ContactContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/ContactFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/ContactFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/ContactModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/ContactModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/ContactPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/ContactPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/IContactListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/contactlist/IContactListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/CreateGroupBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/CreateGroupBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/CreateGroupFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/CreateGroupFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/CreateGroupModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/CreateGroupModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/CreateGroupPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/CreateGroupPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/ICreateGroupContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/ICreateGroupContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/ContactDetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/ContactDetailActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/ContactDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/ContactDetailFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DeleteContactListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DeleteContactListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailMenuAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailMenuAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/IDetailContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/IDetailContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/dynamic/SettingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/dynamic/SettingFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/GroupMemberRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/GroupMemberRecyclerViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/IEditGroupContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/IEditGroupContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailMenuAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailMenuAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/IGroupDetailContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/IGroupDetailContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/ILeaveGroupListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/ILeaveGroupListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/IGroupListContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/IGroupListContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/AbstractLoginBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/AbstractLoginBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ILoginContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ILoginContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ISignUpContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ISignUpContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ISignUpListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ISignUpListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoggedInListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoggedInListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/IMainContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/IMainContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/msg/MsgFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/msg/MsgFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/ContactMsgAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/ContactMsgAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/IInviteContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/IInviteContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InvitePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InvitePresenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_info.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,85 +123,93 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberPresenter.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="190">
+              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberBiz.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/msg/MsgFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/ContactMsgAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-228">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/IInviteContract.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4114">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteBiz.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/dynamic/UserInfo.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/dynamic/SettingFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/event/GroupEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/data/biz/IDbBiz.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/app/CommonViewHolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_user_info.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InvitePresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="233" column="46" selection-start-line="233" selection-start-column="46" selection-end-line="233" selection-end-column="46" />
+            <state relative-caret-position="57">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainPresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -151,16 +234,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_user_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/creategroup/ICreateGroupContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/ContactDetailActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/ContactDetailFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DeleteContactListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailBiz.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailMenuAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/IDetailContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberBiz.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/GroupMemberRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/IEditGroupContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailBiz.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailMenuAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/IGroupDetailContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/ILeaveGroupListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListBiz.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/IGroupListContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/AbstractLoginBiz.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ILoginContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ISignUpContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ISignUpListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoggedInListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginBiz.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpBiz.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/IMainContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainBiz.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/msg/MsgFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/ContactMsgAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/IInviteContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteBiz.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InvitePresenter.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
-    <option name="y" value="127" />
+    <option name="y" value="126" />
     <option name="width" value="1440" />
-    <option name="height" value="774" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectId" id="1dZyYdvYsB6MqGHBcF1oR6ADXrb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -169,13 +301,93 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cechat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cechat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cechat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cechat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="addcontact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cechat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cechat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="creategroup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cechat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="dynamic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cechat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cechat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="msg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="cechat" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="newmsg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="find_instructor" type="1abcf292:AndroidViewProjectNode" />
@@ -192,8 +404,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,28 +524,30 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" visible="true" weight="0.3297587" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Build Variants" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Logcat" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.2266289" />
-      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info active="true" anchor="right" id="Preview" visible="true" weight="0.3297587" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3297587" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" visible="true" weight="0.10481586" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.3297587" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,81 +584,362 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-          <folding>
-            <element signature="e#849#874#0" expanded="true" />
-            <element signature="e#902#938#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberPresenter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/DetailPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="57">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/detail/IDetailContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/dynamic/InfoItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/dynamic/SettingFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/IEditGroupContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2271">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/GroupMemberRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-893">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupMemberPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2185">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3031">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailMenuAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/GroupDetailPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2261">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/IGroupDetailContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3506">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/groupdetail/ILeaveGroupListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1433">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="52" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/GroupListPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/grouplist/IGroupListContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/AbstractLoginBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/BaseLoginBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ILoginContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ISignUpContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoggedInListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/SignUpBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/login/ISignUpListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/IMainContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainBiz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/editgroup/EditGroupFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/dynamic/UserInfo.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="57">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/dynamic/SettingFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/main/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="190">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/event/GroupEvent.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/msg/MsgFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="30">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/data/biz/IDbBiz.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/ContactMsgAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="-228">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/app/CommonViewHolder.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/IInviteContract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="-4114">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_user_info.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteBiz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="233" column="46" selection-start-line="233" selection-start-column="46" selection-end-line="233" selection-end-column="46" />
+        <state relative-caret-position="57">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InviteModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ce/cechat/ui/newmsg/InvitePresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

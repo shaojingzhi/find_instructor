@@ -9,18 +9,9 @@ import com.hyphenate.chat.EMGroupOptions;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public interface ISelectContactContract {
 
 
-    /**
-     * @author CE Chen
-     *
-     */
     public interface ISelectContactView extends IBaseContact.IBaseView {
 
         /**
@@ -61,11 +52,6 @@ public interface ISelectContactContract {
     }
 
 
-    /**
-     * @author CE Chen
-     *
-     * 选择联系人业务逻辑操作接口
-     */
     public interface ISelectContactBiz extends IBaseContact.IBaseBiz {
 
         /**
@@ -84,11 +70,6 @@ public interface ISelectContactContract {
 
     }
 
-    /**
-     * @author CE Chen
-     *
-     * Select Contact Presenter
-     */
     public interface IPresenter {
 
         public void getAllContact();

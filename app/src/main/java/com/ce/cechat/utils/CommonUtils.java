@@ -7,11 +7,6 @@ import com.hyphenate.util.HanziToPinyin;
 
 import java.util.ArrayList;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 : 常用工具类
- */
 public class CommonUtils {
 
     private CommonUtils() {

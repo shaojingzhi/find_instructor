@@ -11,11 +11,7 @@ import com.hyphenate.easeui.widget.chatrow.EaseCustomChatRowProvider;
 
 import androidx.navigation.Navigation;
 
-/**
- * @author CE Chen
- *
- *
- */
+
 public class ChatFragment extends EaseChatFragment implements EaseChatFragment.EaseChatFragmentHelper {
 
     @Override

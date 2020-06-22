@@ -46,15 +46,6 @@ public class SearchFragment extends InjectFragment<SearchPresenter> implements I
     @BindView(R.id.tv_nickname)
     AppCompatTextView tvNickname;
 
-    @Nullable
-    @BindView(R.id.tv_shenfen)
-    AppCompatTextView tvShenfen;
-    @Nullable
-    @BindView(R.id.tv_department)
-    AppCompatTextView tvDepartment;
-    @Nullable
-    @BindView(R.id.tv_introduction)
-    AppCompatTextView tvIntroduction;
     @BindView(R.id.tv_add)
     AppCompatTextView tvAdd;
 

@@ -5,11 +5,6 @@ import android.content.Context;
 import com.ce.cechat.R;
 import com.hyphenate.EMError;
 
-/**
- * @author CE Chen
- *
- * 错误码工具类
- */
 public class ErrorCode {
 
     private ErrorCode() {

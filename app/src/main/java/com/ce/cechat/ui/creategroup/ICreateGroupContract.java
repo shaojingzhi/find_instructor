@@ -6,18 +6,8 @@ import com.hyphenate.chat.EMGroup;
 import com.hyphenate.chat.EMGroupManager;
 import com.hyphenate.chat.EMGroupOptions;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public interface ICreateGroupContract {
 
-    /**
-     * @author CE Chen
-     *
-     *
-     */
     public interface ICreateGroupView extends IBaseContact.IBaseView {
 
         /**

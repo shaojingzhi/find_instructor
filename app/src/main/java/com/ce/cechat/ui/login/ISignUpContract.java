@@ -2,11 +2,7 @@ package com.ce.cechat.ui.login;
 
 import com.ce.cechat.app.IBaseContact;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
+
 public interface ISignUpContract {
 
     public interface ISignUpView extends ILoginContract.ILoginView {

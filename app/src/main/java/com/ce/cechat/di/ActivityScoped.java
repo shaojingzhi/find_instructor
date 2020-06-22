@@ -6,11 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 
 import javax.inject.Scope;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
+
 @Scope
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

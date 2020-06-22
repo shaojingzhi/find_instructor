@@ -10,11 +10,6 @@ import com.ce.cechat.ui.login.LoginActivity;
 import com.ce.cechat.ui.main.MainActivity;
 import com.ce.cechat.ui.splash.ISplashContract.ISplashView;
 
-/**
- * @author CE Chen
- *
- * 欢迎界面
- */
 public class SplashActivity extends BaseActivity<SplashPresenter> implements ISplashView {
 
     private CountDownTimerUtils mCountDownTimer;

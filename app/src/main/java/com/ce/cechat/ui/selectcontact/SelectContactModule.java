@@ -10,11 +10,6 @@ import com.ce.cechat.ui.newmsg.InviteBiz;
 import dagger.Module;
 import dagger.Provides;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 @Module
 public class SelectContactModule {
 

@@ -34,12 +34,6 @@ import java.util.Set;
 import androidx.navigation.Navigation;
 import butterknife.BindView;
 
-/**
- * @author CE Chen
- * <p>
- * Use the {@link SelectContactFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class SelectContactFragment extends InjectFragment<SelectContactPresenter>
         implements ISelectContactContract.ISelectContactView {
 

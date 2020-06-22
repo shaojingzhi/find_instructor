@@ -43,13 +43,6 @@ import androidx.navigation.Navigation;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * @author CE Chen
- * <p>
- * 群资料
- * Use the {@link GroupDetailFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class GroupDetailFragment extends InjectFragment<GroupDetailPresenter>
         implements IGroupDetailContract.IGroupDetailView,
         AdapterView.OnItemClickListener,

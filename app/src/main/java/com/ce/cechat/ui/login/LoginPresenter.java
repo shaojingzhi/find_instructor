@@ -16,11 +16,7 @@ import okhttp3.Response;
 import com.ce.cechat.ui.Values;
 import org.json.JSONArray;
 import org.json.JSONObject;
-/**
- * @author CE Chen
- *
- * Login presenter
- */
+
 public class LoginPresenter extends BasePresenter<ILoginContract.ILoginView, LoginBiz> implements ILoginContract.IPresenter {
 
     private static final String TAG = "LoginPresenter";

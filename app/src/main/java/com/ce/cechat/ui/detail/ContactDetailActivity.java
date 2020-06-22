@@ -18,9 +18,6 @@ import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
-/**
- * @author CE Chen
- */
 public class ContactDetailActivity extends AppCompatActivity
         implements BaseFragment.OnFragmentInteractionListener, NavController.OnNavigatedListener {
 

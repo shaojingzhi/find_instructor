@@ -12,11 +12,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 
-/**
- * @author CE Chen
- * <p>
- * 作用 : Edit Group Member Presenter
- */
 public class EditGroupMemberPresenter extends BasePresenter<IEditGroupContract.IEditGroupMemberView, EditGroupMemberBiz>
         implements IEditGroupContract.IPresenter {
 

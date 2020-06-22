@@ -2,11 +2,6 @@ package com.ce.cechat.ui.login;
 
 import com.hyphenate.exceptions.HyphenateException;
 
-/**
- * @author CE Chen
- *
- * 注册回调接口
- */
 public interface ISignUpListener {
 
     /**

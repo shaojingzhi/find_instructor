@@ -17,12 +17,7 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * 联系人业务逻辑操作类
- *
- */
+
 public class ContactBiz implements ContactContract.IContactBiz {
 
     @Inject

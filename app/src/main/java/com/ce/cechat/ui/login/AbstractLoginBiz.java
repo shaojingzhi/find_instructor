@@ -4,9 +4,6 @@ import android.text.TextUtils;
 
 import java.util.regex.Pattern;
 
-/**
- * @author CE Chen
- */
 public abstract class AbstractLoginBiz implements BaseLoginBiz {
 
     /**

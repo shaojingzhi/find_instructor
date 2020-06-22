@@ -19,11 +19,7 @@ import androidx.navigation.NavDestination;
 import androidx.navigation.NavGraph;
 import androidx.navigation.fragment.NavHostFragment;
 
-/**
- * @author CE Chen
- *
- *
- */
+
 public class ChatActivity extends AppCompatActivity implements BaseFragment.OnFragmentInteractionListener {
 
     private static final String TAG = "ChatActivity";

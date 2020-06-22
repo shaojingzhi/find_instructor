@@ -17,11 +17,6 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 : 群成员 Adapter
- */
 public class GroupMemberAdapter extends RecyclerView.Adapter<CommonViewHolder> {
 
     private static final String TAG = "GroupMemberAdapter";

@@ -10,11 +10,6 @@ import com.hyphenate.chat.EMClient;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * 登录逻辑实现类
- */
 public class LoginBiz extends AbstractLoginBiz implements ILoginContract.ILoginBiz {
 
     @Inject

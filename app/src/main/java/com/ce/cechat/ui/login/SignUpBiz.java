@@ -8,12 +8,6 @@ import com.hyphenate.exceptions.HyphenateException;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * 注册业务逻辑实现类
- *
- */
 public class SignUpBiz extends AbstractLoginBiz implements ISignUpContract.ISignUpBiz {
 
     @Inject

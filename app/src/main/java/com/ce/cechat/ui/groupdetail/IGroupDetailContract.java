@@ -11,19 +11,10 @@ import com.hyphenate.exceptions.HyphenateException;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
+
 public interface IGroupDetailContract {
 
 
-    /**
-     * @author CE Chen
-     * <p>
-     * 作用 : IGroupDetailView 接口
-     */
     public interface IGroupDetailView extends IBaseContact.IBaseView {
 
         /**

@@ -18,11 +18,6 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Select Contact Presenter
- */
 public class SelectContactPresenter extends BasePresenter<ISelectContactContract.ISelectContactView, SelectContactBiz>
         implements ISelectContactContract.IPresenter {
 

@@ -8,11 +8,6 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * 选择联系人业务逻辑操作类
- */
 public class SelectContactBiz implements ISelectContactContract.ISelectContactBiz {
 
     @Inject

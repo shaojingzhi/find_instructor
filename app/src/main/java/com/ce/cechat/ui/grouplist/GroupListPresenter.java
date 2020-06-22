@@ -9,11 +9,6 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Group List Presenter
- */
 public class GroupListPresenter extends BasePresenter<IGroupListContract.IGroupListView, GroupListBiz>
         implements IGroupListContract.IPresenter {
 

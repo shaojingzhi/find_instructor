@@ -4,18 +4,9 @@ import com.ce.cechat.app.IBaseContact;
 import com.ce.cechat.bean.User;
 import com.hyphenate.EMCallBack;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public interface ISearchContract {
 
 
-    /**
-     * @author CE Chen
-     *
-     */
     public interface ISearchView extends IBaseContact.IBaseView {
 
         /**
@@ -98,11 +89,6 @@ public interface ISearchContract {
         void addNewFriend(String pUserId, String pReason, EMCallBack pCallBack);
     }
 
-    /**
-     * @author CE Chen
-     *
-     * Search Presenter
-     */
     public interface IPresenter {
 
         /**

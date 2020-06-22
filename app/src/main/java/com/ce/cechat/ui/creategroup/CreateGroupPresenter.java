@@ -8,11 +8,6 @@ import com.hyphenate.chat.EMGroupOptions;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Create Group Presenter
- */
 public class CreateGroupPresenter extends BasePresenter<ICreateGroupContract.ICreateGroupView, CreateGroupBiz>
         implements ICreateGroupContract.IPresenter {
 

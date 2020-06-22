@@ -7,11 +7,6 @@ import com.hyphenate.chat.EMClient;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * 主页面业务逻辑操作类
- */
 public class MainBiz implements IMainContract.IMainBiz {
 
     @Inject

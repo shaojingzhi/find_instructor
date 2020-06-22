@@ -6,11 +6,6 @@ import com.ce.cechat.ui.splash.ISplashContract.ISplashView;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Splash Presenter
- */
 public class SplashPresenter extends BasePresenter<ISplashView, SplashBiz> implements ISplashContract.ISplashPresenter {
 
     @Inject

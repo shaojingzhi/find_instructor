@@ -15,11 +15,6 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Group Detail Presenter
- */
 public class GroupDetailPresenter extends BasePresenter<IGroupDetailContract.IGroupDetailView, GroupDetailBiz>
         implements IGroupDetailContract.IPresenter {
 

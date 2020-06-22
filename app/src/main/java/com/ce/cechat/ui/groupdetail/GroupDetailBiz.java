@@ -20,11 +20,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * 群资料业务逻辑操作类
- */
+
 public class GroupDetailBiz implements IGroupDetailContract.IGroupDetailBiz {
 
     private static final String TAG = "GroupDetailBiz";

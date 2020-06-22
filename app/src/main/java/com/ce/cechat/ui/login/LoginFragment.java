@@ -20,13 +20,6 @@ import androidx.navigation.Navigation;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * @author CE Chen
- * <p>
- * 用于登录
- * Use the {@link LoginFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class LoginFragment extends InjectFragment<LoginPresenter> implements ILoginContract.ILoginView {
 
     public static final String TAG = "LoginFragment";

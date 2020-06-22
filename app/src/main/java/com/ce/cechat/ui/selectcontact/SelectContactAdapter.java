@@ -28,11 +28,6 @@ import com.hyphenate.util.EMLog;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author CE Chen
- *
- *
- */
 public class SelectContactAdapter extends ArrayAdapter<User> implements SectionIndexer{
     private static final String TAG = "ContactAdapter";
     List<String> list;

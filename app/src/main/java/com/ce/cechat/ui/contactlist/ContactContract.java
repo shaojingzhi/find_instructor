@@ -8,16 +8,9 @@ import com.hyphenate.exceptions.HyphenateException;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
+
 public interface ContactContract {
 
-    /**
-     * @author CE Chen
-     */
     public interface IContactView extends IBaseContact.IBaseView {
 
         /**

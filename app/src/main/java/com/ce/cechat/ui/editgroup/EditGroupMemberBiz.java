@@ -7,11 +7,7 @@ import com.hyphenate.chat.EMGroup;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 : 编辑群成员业务逻辑操作类
- */
+
 public class EditGroupMemberBiz implements IEditGroupContract.IEditGroupMemberBiz {
 
     @Inject

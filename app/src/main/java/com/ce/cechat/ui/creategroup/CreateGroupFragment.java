@@ -20,12 +20,6 @@ import androidx.navigation.Navigation;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * @author CE Chen
- * <p>
- * Use the {@link CreateGroupFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class CreateGroupFragment extends InjectFragment<CreateGroupPresenter> implements ICreateGroupContract.ICreateGroupView {
 
     private static final int GROUP_MAX_USERS = 500;

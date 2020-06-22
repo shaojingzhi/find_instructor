@@ -8,18 +8,9 @@ import com.hyphenate.chat.EMGroup;
 
 import java.util.List;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public interface IEditGroupContract {
 
-    /**
-     * @author CE Chen
-     * <p>
-     * 作用 : Edit Group Member View
-     */
+
     public interface IEditGroupMemberView extends IBaseContact.IBaseView {
 
         /**

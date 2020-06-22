@@ -27,12 +27,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
- * @author CE Chen
- * <p>
- * 编辑群成员
- * A fragment representing a list of Items.
- */
+
 public class EditGroupFragment extends InjectFragment<EditGroupMemberPresenter>
         implements GroupMemberRecyclerViewAdapter.OnListFragmentInteractionListener,
         IEditGroupContract.IEditGroupMemberView {

@@ -35,14 +35,7 @@ import okhttp3.Response;
 
 import static android.app.Activity.RESULT_OK;
 
-/**
- * @author CE Chen
- *
- * 动态
- *
- * Use the {@link SettingFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class SettingFragment extends BaseFragment {
 
 

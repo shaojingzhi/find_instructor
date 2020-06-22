@@ -31,13 +31,7 @@ import dagger.android.DispatchingAndroidInjector;
 import dagger.android.support.AndroidSupportInjection;
 import dagger.android.support.HasSupportFragmentInjector;
 
-/**
- * @author CE Chen
- *
- * A fragment representing a list of Items.
- * <p/>
- * interface.
- */
+
 public class GroupListFragment extends EaseGroupListFragment
         implements IGroupListContract.IGroupListView,
         EaseGroupListFragment.EaseGroupListItemClickListener,

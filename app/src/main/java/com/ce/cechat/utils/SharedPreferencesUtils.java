@@ -4,14 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import java.util.Map;
-/**
- *
-* <p>Title: SharedPreferencesUtils</p>
-* <p>Description: SharedPreferences工具类</p>
-* <p>Company: </p>
-* @author    CEChan
-* @date       Oct 30, 2015 9:32:26 AM
- */
+
 public class SharedPreferencesUtils {
 	/**
 	 * 默认保存在手机里的文件名 share_data

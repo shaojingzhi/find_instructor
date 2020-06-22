@@ -9,11 +9,6 @@ import com.hyphenate.chat.EMClient;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * 查找用户逻辑实现
- */
 public class SearchBiz implements ISearchContract.ISearchBiz {
 
     @Inject

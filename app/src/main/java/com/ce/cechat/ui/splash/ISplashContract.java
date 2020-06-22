@@ -3,16 +3,9 @@ package com.ce.cechat.ui.splash;
 import com.ce.cechat.app.IBaseContact;
 import com.ce.cechat.ui.login.LoggedInListener;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public interface ISplashContract {
 
-    /**
-     * @author CE Chen
-     */
+
     public interface ISplashBiz extends IBaseContact.IBaseBiz {
 
         /**

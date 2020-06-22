@@ -14,12 +14,6 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * @author CE Chen
- *
- * {@link RecyclerView.Adapter} that can display a {@link GroupMember} and makes a call to the
- * specified {@link OnListFragmentInteractionListener}.
- */
 public class GroupMemberRecyclerViewAdapter extends RecyclerView.Adapter<CommonViewHolder> {
 
     private static final String TAG = "GroupMemberAdapter";

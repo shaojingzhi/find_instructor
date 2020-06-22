@@ -2,11 +2,6 @@ package com.ce.cechat.ui.newmsg;
 
 import com.hyphenate.exceptions.HyphenateException;
 
-/**
- * @author CE Chen
- *
- *
- */
 public interface InviteListener {
 
     /**

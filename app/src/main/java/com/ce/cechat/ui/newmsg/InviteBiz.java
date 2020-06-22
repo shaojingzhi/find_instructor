@@ -25,12 +25,6 @@ import static com.ce.cechat.bean.Invitation.InvitationStatus.GROUP_REFUSE_INVITE
 import static com.ce.cechat.bean.Invitation.InvitationStatus.INVITE_ACCEPT;
 import static com.ce.cechat.bean.Invitation.InvitationStatus.INVITE_REFUSE;
 
-
-/**
- * @author CE Chen
- *
- *
- */
 public class InviteBiz implements IInviteContract.IInviteBiz {
 
     private static final String TAG = "InviteBiz";

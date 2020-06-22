@@ -5,11 +5,6 @@ import com.hyphenate.exceptions.HyphenateException;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Detail Presenter
- */
 public class DetailPresenter extends BasePresenter<IDetailContract.IContactDetailView, DetailBiz>
         implements IDetailContract.IPresenter {
 

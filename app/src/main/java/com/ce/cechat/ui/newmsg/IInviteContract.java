@@ -7,16 +7,9 @@ import com.hyphenate.exceptions.HyphenateException;
 
 import java.util.List;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public interface IInviteContract {
 
-    /**
-     * @author CE Chen
-     */
+
     public interface IInviteView extends IBaseContact.IBaseView {
 
         /**

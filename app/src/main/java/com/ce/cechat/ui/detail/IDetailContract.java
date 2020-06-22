@@ -3,17 +3,9 @@ package com.ce.cechat.ui.detail;
 import com.ce.cechat.app.IBaseContact;
 import com.hyphenate.exceptions.HyphenateException;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public interface IDetailContract {
 
 
-    /**
-     * @author CE Chen
-     */
     public interface IContactDetailView extends IBaseContact.IBaseView {
 
         /**
@@ -31,11 +23,6 @@ public interface IDetailContract {
     }
 
 
-    /**
-     * @author CE Chen
-     *
-     * 详细资料业务逻辑操作接口
-     */
     public interface IDetailBiz extends IBaseContact.IBaseBiz {
 
         /**

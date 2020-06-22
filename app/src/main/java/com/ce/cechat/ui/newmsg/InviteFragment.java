@@ -31,14 +31,6 @@ import static com.ce.cechat.bean.Invitation.InvitationStatus.NEW_GROUP_APPLICATI
 import static com.ce.cechat.bean.Invitation.InvitationStatus.NEW_GROUP_INVITE;
 import static com.ce.cechat.bean.Invitation.InvitationStatus.NEW_INVITE;
 
-/**
- * @author CE Chen
- * <p>
- * 邀请消息
- * <p>
- * Use the {@link InviteFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class InviteFragment extends InjectFragment<InvitePresenter>
         implements ContactMsgAdapter.OnContactMsgListener,
         IInviteContract.IInviteView {

@@ -19,14 +19,6 @@ import com.ce.cechat.utils.ErrorCode;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * @author CE Chen
- * <p>
- * <p>
- * 用于注册
- * Use the {@link SignUpFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class SignUpFragment extends InjectFragment<SignUpPresenter> implements ISignUpContract.ISignUpView {
 
     public static final String TAG = "SignUpFragment";

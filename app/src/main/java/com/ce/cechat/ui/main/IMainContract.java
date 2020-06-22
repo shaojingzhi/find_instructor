@@ -3,18 +3,8 @@ package com.ce.cechat.ui.main;
 import com.ce.cechat.app.IBaseContact;
 import com.hyphenate.EMCallBack;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public interface IMainContract {
 
-    /**
-     * @author CE Chen
-     *
-     *
-     */
     public interface IMainView extends IBaseContact.IBaseView {
 
         /**
@@ -38,11 +28,6 @@ public interface IMainContract {
     }
 
 
-    /**
-     * @author CE Chen
-     *
-     * 主页面业务逻辑接口
-     */
     public interface IMainBiz extends IBaseContact.IBaseBiz {
 
         /**
@@ -65,11 +50,6 @@ public interface IMainContract {
     }
 
 
-    /**
-     * @author CE Chen
-     *
-     * Main Presenter
-     */
     public interface IPresenter {
 
         /**

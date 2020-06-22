@@ -33,13 +33,6 @@ import com.hyphenate.exceptions.HyphenateException;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * @author CE Chen
- * <p>
- * <p>
- * Use the {@link ContactDetailFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ContactDetailFragment extends InjectFragment<DetailPresenter>
         implements AdapterView.OnItemClickListener, IDetailContract.IContactDetailView {
 

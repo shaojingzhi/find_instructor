@@ -8,11 +8,6 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Invite Presenter
- */
 public class InvitePresenter extends BasePresenter<IInviteContract.IInviteView, InviteBiz>
         implements IInviteContract.IPresenter {
 

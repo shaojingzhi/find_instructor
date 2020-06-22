@@ -10,10 +10,6 @@ import com.ce.cechat.utils.ThreadPools;
 import com.hyphenate.chat.EMClient;
 import com.ce.cechat.ui.splash.ISplashContract.ISplashBiz;
 
-/**
- * @author CE Chen
- *
- */
 public class SplashBiz implements ISplashBiz {
 
     private static final String TAG = "SplashBiz";

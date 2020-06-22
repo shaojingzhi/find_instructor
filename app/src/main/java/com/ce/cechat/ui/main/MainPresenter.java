@@ -8,11 +8,6 @@ import com.hyphenate.chat.EMClient;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Main Presenter
- */
 public class MainPresenter extends BasePresenter<IMainContract.IMainView, MainBiz> implements IMainContract.IPresenter {
 
     @Inject

@@ -10,11 +10,6 @@ import android.widget.TextView;
 
 import com.ce.cechat.R;
 
-/**
- * @author CE Chen
- *
- *
- */
 public class DetailMenuAdapter extends BaseAdapter {
 
     private Context mContext;

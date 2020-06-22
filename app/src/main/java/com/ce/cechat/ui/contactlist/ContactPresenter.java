@@ -11,11 +11,7 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Contact Presenter
- */
+
 public class ContactPresenter extends BasePresenter<ContactContract.IContactView, ContactBiz>
         implements ContactContract.IPresenter {
 

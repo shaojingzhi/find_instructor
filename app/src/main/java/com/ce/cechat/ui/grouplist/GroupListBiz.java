@@ -11,11 +11,7 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- *
- */
+
 public class GroupListBiz implements IGroupListContract.IGroupListBiz {
 
     @Inject

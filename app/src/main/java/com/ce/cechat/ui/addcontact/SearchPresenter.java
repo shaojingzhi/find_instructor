@@ -8,11 +8,7 @@ import com.hyphenate.EMCallBack;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- * Search Presenter
- */
+
 public class SearchPresenter extends BasePresenter<ISearchContract.ISearchView, SearchBiz> implements ISearchContract.IPresenter {
 
     private static final String TAG = "SearchPresenter";

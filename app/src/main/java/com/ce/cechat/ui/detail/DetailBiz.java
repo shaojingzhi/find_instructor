@@ -7,9 +7,6 @@ import com.hyphenate.exceptions.HyphenateException;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- */
 public class DetailBiz implements IDetailContract.IDetailBiz {
 
     @Inject

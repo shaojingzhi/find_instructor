@@ -11,10 +11,6 @@ import com.hyphenate.chat.EMGroupOptions;
 
 import javax.inject.Inject;
 
-/**
- * @author CE Chen
- *
- */
 public class CreateGroupBiz implements ICreateGroupContract.ICreateGroupBiz {
 
     @Inject

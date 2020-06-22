@@ -7,18 +7,9 @@ import com.hyphenate.chat.EMGroup;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 public interface IGroupListContract {
 
-    /**
-     * @author CE Chen
-     *
-     *
-     */
+
     public interface IGroupListView extends IBaseContact.IBaseView {
 
         /**
@@ -42,11 +33,7 @@ public interface IGroupListContract {
     }
 
 
-    /**
-     * @author CE Chen
-     *
-     * 群列表业务逻辑操作类接口
-     */
+
     public interface IGroupListBiz extends IBaseContact.IBaseBiz {
 
         /**
@@ -64,11 +51,6 @@ public interface IGroupListContract {
 
     }
 
-    /**
-     * @author CE Chen
-     *
-     * Group List Presenter
-     */
     public interface IPresenter {
 
         public void getGroupList();

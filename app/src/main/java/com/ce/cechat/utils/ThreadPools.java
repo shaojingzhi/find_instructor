@@ -11,11 +11,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- * @author CE Chen
- *
- * 线程池管理类
- */
 public class ThreadPools {
 
     private volatile static ThreadPools sThreadPools;

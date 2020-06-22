@@ -6,11 +6,6 @@ import com.ce.cechat.ui.groupdetail.IGroupDetailContract;
 import dagger.Module;
 import dagger.Provides;
 
-/**
- * @author CE Chen
- * <p>
- * 作用 :
- */
 @Module
 public class EditGroupModule {
 

@@ -29,10 +29,6 @@ import static com.ce.cechat.bean.Invitation.InvitationStatus.NEW_GROUP_APPLICATI
 import static com.ce.cechat.bean.Invitation.InvitationStatus.NEW_GROUP_INVITE;
 import static com.ce.cechat.bean.Invitation.InvitationStatus.NEW_INVITE;
 
-/**
- * @author CE Chen
- *
- */
 public class ContactMsgAdapter extends RecyclerView.Adapter<CommonViewHolder> {
 
 
